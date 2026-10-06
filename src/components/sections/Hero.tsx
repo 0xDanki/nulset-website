@@ -14,7 +14,7 @@ export function Hero() {
         <p className="hero-lede">
           Prove you’re not on the list. Reusable, privacy-preserving exclusion
           checks for platforms that need confidence—not another identity
-          database.
+          database to maintain and secure.
         </p>
         <div className="hero-actions">
           <ButtonLink href="#request-access" variant="dark" icon="external">

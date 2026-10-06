@@ -339,23 +339,30 @@ section[id] {
 
 .button-dark {
   background:var(--black);
-  color:var(--white)
+  color:var(--white);
+  transition:background .25s ease,color .25s ease,transform .2s ease,box-shadow .2s ease
 }
 
 .button-dark:hover {
   color:var(--black);
-  background:0 0
+  background:var(--signal);
+  border-color:var(--signal);
+  transform:translateY(-2px);
+  box-shadow:0 4px 12px rgba(0,0,0,.15)
 }
 
 .button-yellow {
   border-color:var(--signal);
   background:var(--signal);
-  color:var(--black)
+  color:var(--black);
+  transition:background .25s ease,color .25s ease,transform .2s ease,box-shadow .2s ease
 }
 
 .button-yellow:hover {
   background:var(--white);
-  border-color:var(--white)
+  border-color:var(--white);
+  transform:translateY(-2px);
+  box-shadow:0 4px 12px rgba(0,0,0,.1)
 }
 
 .text-link {

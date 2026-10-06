@@ -73,7 +73,7 @@ export function RequestAccess() {
           Preview form — submissions are not connected yet.
         </p>
 
-        <Button type="submit" variant="yellow" icon="external">
+        <Button type="submit" variant="dark" icon="external">
           Request access
         </Button>
 
