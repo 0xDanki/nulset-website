@@ -867,13 +867,13 @@ main,.site-footer {
   display:flex;
   align-items:center;
   justify-content:flex-end;
-  padding-right:var(--gutter)
+  padding-right:0
 }
 
 .interlude-animal {
   --parallax-y:0px;
   z-index:1;
-  width:min(90%,480px);
+  width:min(100%,550px);
   max-width:none;
   height:auto;
   transform:translateY(var(--parallax-y));
@@ -1310,11 +1310,11 @@ main,.site-footer {
     font-size:clamp(32px,10vw,48px)
   }
   .interlude-art {
-    padding:40px var(--gutter);
-    justify-content:center
+    padding:40px 0;
+    justify-content:flex-end
   }
   .interlude-animal {
-    width:min(90%,380px)
+    width:min(100%,400px)
   }
   .request-section {
     display:block
