@@ -59,7 +59,8 @@
 }
 
 * {
-  box-sizing:border-box
+  box-sizing:border-box;
+  font-family:inherit
 }
 
 html {
@@ -73,6 +74,10 @@ body {
   font-synthesis: none;
   text-rendering:optimizelegibility;
   margin:0
+}
+
+h1,h2,h3,h4,h5,h6,p,span,div,li,a,strong,em {
+  font-family:inherit
 }
 
 body,button,input,textarea {
@@ -286,11 +291,11 @@ section[id] {
 }
 
 .hero h1,.principle-copy h2,.how-heading h2,.why-heading h2,.use-heading h2,.interlude-copy h2,.request-heading h2 {
-  font-family: var(--font-sans);
+  font-family: "Arial Black", "Helvetica Neue", Helvetica, Arial, sans-serif;
   letter-spacing:-.07em;
   text-transform:uppercase;
   margin:0;
-  font-weight:700
+  font-weight:900
 }
 
 .hero h1 {
