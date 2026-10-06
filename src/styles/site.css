@@ -32,22 +32,6 @@
 
 @font-face {
   font-family: "Nulset Sans";
-  src: url("../assets/fonts/NimbusSans-Bold.woff2") format("woff2");
-  font-weight: 800;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Nulset Sans";
-  src: url("../assets/fonts/NimbusSans-Bold.woff2") format("woff2");
-  font-weight: 900;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Nulset Sans";
   src: url("../assets/fonts/NimbusSans-Italic.woff2") format("woff2");
   font-weight: 400;
   font-style: italic;
@@ -304,7 +288,7 @@ section[id] {
   letter-spacing:-.07em;
   text-transform:uppercase;
   margin:0;
-  font-weight:800
+  font-weight:700
 }
 
 .hero h1 {
