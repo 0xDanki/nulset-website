@@ -829,15 +829,17 @@ main,.site-footer {
 
 .brand-interlude {
   background:var(--light-gray);
-  display:block;
+  display:grid;
+  grid-template-columns:1fr 1fr;
   min-height:auto;
   position:relative;
   padding-bottom:0;
-  margin-bottom:-120px
+  margin-bottom:-100px;
+  overflow:visible
 }
 
 .interlude-copy {
-  padding:clamp(64px,6vw,100px) var(--gutter) 40px;
+  padding:clamp(64px,6vw,100px) var(--gutter) clamp(80px,8vw,120px);
   flex-direction:column;
   justify-content:flex-start;
   display:flex;
@@ -846,14 +848,14 @@ main,.site-footer {
 }
 
 .interlude-copy h2 {
-  max-width:700px;
+  max-width:600px;
   margin-top:28px;
   font-size:clamp(36px,4.2vw,64px);
   line-height:.92
 }
 
 .interlude-copy p {
-  max-width:550px;
+  max-width:500px;
   margin:28px 0 0;
   font-size:17px;
   line-height:1.55
@@ -862,20 +864,20 @@ main,.site-footer {
 .interlude-art {
   background:transparent;
   position:relative;
-  height:350px;
-  overflow:visible
+  overflow:visible;
+  min-height:400px
 }
 
 .interlude-animal {
   --parallax-y:0px;
   z-index:1;
-  width:min(55%,450px);
+  width:min(95%,500px);
   max-width:none;
   height:auto;
   position:absolute;
   bottom:0;
-  right:var(--gutter);
-  transform:translateY(calc(30% + var(--parallax-y)));
+  right:0;
+  transform:translateY(calc(25% + var(--parallax-y)));
   will-change:transform
 }
 
@@ -1064,11 +1066,11 @@ main,.site-footer {
     max-width:760px;
     margin-top:64px
   }
-  .interlude-art {
-    height:300px
+  .brand-interlude {
+    grid-template-columns:1.1fr .9fr
   }
   .interlude-animal {
-    width:min(50%,380px)
+    width:min(100%,420px)
   }
 }
 
@@ -1301,17 +1303,18 @@ main,.site-footer {
     right:-8%
   }
   .brand-interlude {
+    display:block;
     margin-bottom:-80px
   }
   .interlude-copy h2 {
     font-size:clamp(32px,10vw,48px)
   }
   .interlude-art {
-    height:280px
+    min-height:320px
   }
   .interlude-animal {
-    width:min(70%,320px);
-    right:10px
+    width:min(85%,380px);
+    right:0
   }
   .request-section {
     padding-top:calc(var(--section-space) + 80px)
