@@ -453,38 +453,33 @@ main,.site-footer {
 }
 
 .principle-section {
-  background:var(--light-gray);
-  display:block;
-  overflow:hidden;
-  position:relative
+  background:var(--signal);
+  grid-template-columns:minmax(0,62fr) minmax(320px,38fr);
+  display:grid
 }
 
 .principle-copy {
-  padding:clamp(64px,6vw,100px) var(--gutter) clamp(40px,4vw,60px);
-  position:relative;
-  z-index:2
+  padding:clamp(84px,8vw,130px) 5vw 72px
 }
 
 .principle-copy h2 {
-  max-width:700px;
-  margin-top:36px;
-  font-size:clamp(32px,4vw,58px);
-  line-height:.92;
-  word-wrap:break-word;
-  overflow-wrap:break-word
+  max-width:780px;
+  margin-top:46px;
+  font-size:clamp(44px,5vw,78px);
+  line-height:.91
 }
 
 .principle-copy>p {
-  max-width:600px;
-  margin:32px 0 0;
-  font-size:17px;
+  max-width:650px;
+  margin:42px 0 0;
+  font-size:18px;
   line-height:1.55
 }
 
 .principle-visual {
-  background:transparent;
+  background:var(--white);
   place-items:end center;
-  min-height:500px;
+  min-height:720px;
   display:grid;
   position:relative;
   overflow:hidden
@@ -492,20 +487,19 @@ main,.site-footer {
 
 .principle-shape {
   z-index:1;
-  width:min(90%,700px);
+  width:118%;
   height:auto;
   position:absolute;
-  top:50%;
-  left:50%;
-  transform:translate(-50%,-50%)
+  top:13%;
+  right:-26%
 }
 
 .principle-animal {
   --parallax-y:0px;
   z-index:2;
-  width:min(80%,500px);
+  width:min(96%,650px);
   height:auto;
-  transform:translate3d(0, calc(5% + var(--parallax-y)), 0);
+  transform:translate3d(0, calc(8% + var(--parallax-y)), 0);
   will-change:transform;
   position:relative
 }
@@ -834,37 +828,36 @@ main,.site-footer {
 }
 
 .brand-interlude {
-  background:var(--white);
-  grid-template-columns:minmax(0,1.05fr) minmax(430px,.95fr);
-  min-height:750px;
-  display:grid
+  background:var(--light-gray);
+  display:block;
+  min-height:auto
 }
 
 .interlude-copy {
-  padding:var(--section-space) var(--gutter);
+  padding:clamp(64px,6vw,100px) var(--gutter) clamp(40px,4vw,60px);
   flex-direction:column;
-  justify-content:center;
+  justify-content:flex-start;
   display:flex
 }
 
 .interlude-copy h2 {
-  max-width:950px;
-  margin-top:44px;
-  font-size:clamp(54px,6.6vw,112px);
+  max-width:850px;
+  margin-top:36px;
+  font-size:clamp(48px,5.5vw,90px);
   line-height:.88
 }
 
 .interlude-copy p {
   max-width:670px;
-  margin:42px 0 0;
+  margin:32px 0 0;
   font-size:18px;
   line-height:1.55
 }
 
 .interlude-art {
-  background:var(--light-gray);
+  background:transparent;
   place-items:end center;
-  min-height:650px;
+  min-height:500px;
   display:grid;
   position:relative;
   overflow:hidden
@@ -1041,6 +1034,9 @@ main,.site-footer {
   .hero h1 {
     font-size:clamp(58px,8vw,98px)
   }
+  .principle-section {
+    grid-template-columns:minmax(0,1.1fr) minmax(310px,.9fr)
+  }
   .how-section {
     grid-template-columns:minmax(300px,.72fr) minmax(460px,1.28fr)
   }
@@ -1060,14 +1056,8 @@ main,.site-footer {
     max-width:760px;
     margin-top:64px
   }
-  .brand-interlude {
-    display:block
-  }
-  .interlude-copy {
-    min-height:680px
-  }
   .interlude-art {
-    min-height:560px
+    min-height:450px
   }
 }
 
@@ -1299,26 +1289,14 @@ main,.site-footer {
     width:112%;
     right:-8%
   }
-  .brand-interlude {
-    min-height:0;
-    display:block
-  }
-  .interlude-copy {
-    padding:var(--section-space) var(--gutter)
-  }
   .interlude-copy h2 {
-    margin-top:36px;
-    font-size:clamp(47px,14vw,68px)
-  }
-  .interlude-copy p {
-    margin-top:32px;
-    font-size:16px
+    font-size:clamp(40px,12vw,60px)
   }
   .interlude-art {
-    min-height:500px
+    min-height:400px
   }
   .interlude-animal {
-    width:122%
+    width:110%
   }
   .request-section {
     display:block
