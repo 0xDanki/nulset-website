@@ -831,15 +831,15 @@ main,.site-footer {
   background:var(--light-gray);
   display:grid;
   grid-template-columns:1fr 1fr;
+  align-items:center;
   min-height:auto;
   position:relative;
-  padding-bottom:0;
-  margin-bottom:-100px;
-  overflow:visible
+  padding:clamp(64px,6vw,100px) 0;
+  margin-bottom:0
 }
 
 .interlude-copy {
-  padding:clamp(64px,6vw,100px) var(--gutter) clamp(80px,8vw,120px);
+  padding:0 var(--gutter);
   flex-direction:column;
   justify-content:flex-start;
   display:flex;
@@ -864,32 +864,29 @@ main,.site-footer {
 .interlude-art {
   background:transparent;
   position:relative;
-  overflow:visible;
-  min-height:400px
+  display:flex;
+  align-items:center;
+  justify-content:flex-end;
+  padding-right:var(--gutter)
 }
 
 .interlude-animal {
   --parallax-y:0px;
   z-index:1;
-  width:min(95%,500px);
+  width:min(90%,480px);
   max-width:none;
   height:auto;
-  position:absolute;
-  bottom:0;
-  right:0;
-  transform:translateY(calc(25% + var(--parallax-y)));
+  transform:translateY(var(--parallax-y));
   will-change:transform
 }
 
 .request-section {
   padding:var(--section-space) var(--gutter);
-  padding-top:calc(var(--section-space) + 120px);
   background:var(--black);
   color:var(--white);
   grid-template-columns:minmax(0,.92fr) minmax(460px,1.08fr);
   gap:8vw;
   position:relative;
-  z-index:3;
   display:grid;
   position:relative;
   overflow:hidden
@@ -1070,7 +1067,7 @@ main,.site-footer {
     grid-template-columns:1.1fr .9fr
   }
   .interlude-animal {
-    width:min(100%,420px)
+    width:min(95%,400px)
   }
 }
 
@@ -1304,20 +1301,20 @@ main,.site-footer {
   }
   .brand-interlude {
     display:block;
-    margin-bottom:-80px
+    padding:var(--section-space) 0
+  }
+  .interlude-copy {
+    padding:0 var(--gutter)
   }
   .interlude-copy h2 {
     font-size:clamp(32px,10vw,48px)
   }
   .interlude-art {
-    min-height:320px
+    padding:40px var(--gutter);
+    justify-content:center
   }
   .interlude-animal {
-    width:min(85%,380px);
-    right:0
-  }
-  .request-section {
-    padding-top:calc(var(--section-space) + 80px)
+    width:min(90%,380px)
   }
   .request-section {
     display:block
