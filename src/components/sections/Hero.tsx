@@ -5,7 +5,6 @@ export function Hero() {
   return (
     <section className="hero" aria-labelledby="hero-title">
       <div className="hero-copy">
-        <div className="eyebrow">Privacy infrastructure / Zero knowledge</div>
         <h1 id="hero-title">
           Prove less.
           <br />
