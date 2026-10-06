@@ -286,7 +286,7 @@ section[id] {
 }
 
 .hero h1,.principle-copy h2,.how-heading h2,.why-heading h2,.use-heading h2,.interlude-copy h2,.request-heading h2 {
-  font-family: "Helvetica Now", sans-serif;
+  font-family: var(--font-sans);
   letter-spacing:-.07em;
   text-transform:uppercase;
   margin:0;
