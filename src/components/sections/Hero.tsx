@@ -1,5 +1,6 @@
+import { Link } from 'react-router'
 import { assets, heroMeta } from '../../content'
-import { ButtonLink, TextLink } from '../Button'
+import { ButtonLink } from '../Button'
 
 export function Hero() {
   return (
@@ -19,9 +20,9 @@ export function Hero() {
           <ButtonLink href="#request-access" variant="dark" icon="external">
             Request access
           </ButtonLink>
-          <TextLink href="#how-it-works" icon="down">
-            See how it works
-          </TextLink>
+          <Link to="/demo" className="button button-yellow">
+            Try the demo
+          </Link>
         </div>
       </div>
 

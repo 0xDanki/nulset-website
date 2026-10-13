@@ -1,6 +1,40 @@
 import { useEffect } from 'react'
 
 export function useScrollEffects() {
+  // Handle hash scrolling on page load and hash link clicks
+  useEffect(() => {
+    const hash = window.location.hash
+    if (hash) {
+      // Small delay to ensure the page has rendered
+      setTimeout(() => {
+        const element = document.querySelector(hash)
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' })
+        }
+      }, 100)
+    }
+
+    // Handle clicks on hash links
+    const handleHashClick = (e: MouseEvent) => {
+      const target = e.target as HTMLElement
+      const anchor = target.closest('a')
+      if (anchor) {
+        const href = anchor.getAttribute('href')
+        if (href?.startsWith('#')) {
+          e.preventDefault()
+          const element = document.querySelector(href)
+          if (element) {
+            element.scrollIntoView({ behavior: 'smooth' })
+            history.pushState(null, '', href)
+          }
+        }
+      }
+    }
+
+    document.addEventListener('click', handleHashClick)
+    return () => document.removeEventListener('click', handleHashClick)
+  }, [])
+
   useEffect(() => {
     if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
       return

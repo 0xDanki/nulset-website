@@ -23,6 +23,8 @@ export const navLinks = [
   { href: '#how-it-works', label: 'Protocol' },
   { href: '#why-now', label: 'Market gap' },
   { href: '#use-cases', label: 'Use cases' },
+  { href: '#request-access', label: 'Request access' },
+  { href: '/demo', label: 'Try Demo' },
 ] as const
 
 export const heroMeta = [
